@@ -24,3 +24,7 @@ Route::get('/', function () {
 Route::get('/about', function () {
     echo "Nama saya Aryandari Hanugraeni NIM 2031710016";
 });
+
+Route::get('/articles/{id}', function($id){
+    return "Halaman artikel dengan ID ".$id;
+});
